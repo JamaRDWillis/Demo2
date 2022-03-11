@@ -11,6 +11,7 @@
 		662A8E5D973A9E671D13B5EE /* Pods_SS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306CC576D4C544B94FAB93D3 /* Pods_SS.framework */; };
 		8D8A51E90734E8D2C54CA1CE /* Pods_SS_SSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EBF86575365889AB9F3809 /* Pods_SS_SSUITests.framework */; };
 		F042BEE127C4817600521944 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042BEE027C4817600521944 /* HomeViewController.swift */; };
+		F09E93E527D8803600F09AE6 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E93E427D8803600F09AE6 /* CreateViewController.swift */; };
 		F0BDF8E627C2E02C0092FEAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF8E527C2E02C0092FEAA /* AppDelegate.swift */; };
 		F0BDF8E827C2E02C0092FEAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF8E727C2E02C0092FEAA /* SceneDelegate.swift */; };
 		F0BDF8EA27C2E02C0092FEAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF8E927C2E02C0092FEAA /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		AEB9DF9A9CE7A6C0D0660584 /* Pods-SS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SS.debug.xcconfig"; path = "Target Support Files/Pods-SS/Pods-SS.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EBF86575365889AB9F3809 /* Pods_SS_SSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SS_SSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F042BEE027C4817600521944 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F09E93E427D8803600F09AE6 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		F0BDF8E227C2E02C0092FEAA /* SS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BDF8E527C2E02C0092FEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BDF8E727C2E02C0092FEAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +115,6 @@
 				61E98457C69E4896B3073A37 /* Pods-SSTests.debug.xcconfig */,
 				F14DECE27918F5DD2FB6FE73 /* Pods-SSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,9 +123,9 @@
 			children = (
 				F0BDF8E427C2E02C0092FEAA /* SS */,
 				F0BDF8FB27C2E02D0092FEAA /* SSTests */,
-				F0BDF90527C2E02E0092FEAA /* SSUITests */,
 				F0BDF8E327C2E02C0092FEAA /* Products */,
 				8E3F751948E486FF6F90D825 /* Pods */,
+				F0BDF90527C2E02E0092FEAA /* SSUITests */,
 				4E2684ECBA648911355298B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -144,11 +145,12 @@
 			children = (
 				F0BDF8E527C2E02C0092FEAA /* AppDelegate.swift */,
 				F0BDF8E727C2E02C0092FEAA /* SceneDelegate.swift */,
-				F0BDF8E927C2E02C0092FEAA /* ViewController.swift */,
 				F0BDF8EB27C2E02C0092FEAA /* Main.storyboard */,
-				F0BDF8EE27C2E02D0092FEAA /* Assets.xcassets */,
 				F0BDF8F027C2E02D0092FEAA /* LaunchScreen.storyboard */,
+				F0BDF8EE27C2E02D0092FEAA /* Assets.xcassets */,
 				F0BDF8F327C2E02D0092FEAA /* Info.plist */,
+				F0BDF8E927C2E02C0092FEAA /* ViewController.swift */,
+				F09E93E427D8803600F09AE6 /* CreateViewController.swift */,
 				F042BEE027C4817600521944 /* HomeViewController.swift */,
 			);
 			path = SS;
@@ -410,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09E93E527D8803600F09AE6 /* CreateViewController.swift in Sources */,
 				F0BDF8EA27C2E02C0092FEAA /* ViewController.swift in Sources */,
 				F0BDF8E627C2E02C0092FEAA /* AppDelegate.swift in Sources */,
 				F0BDF8E827C2E02C0092FEAA /* SceneDelegate.swift in Sources */,
