@@ -34,8 +34,8 @@ class CreateViewController: UIViewController {
         let email = emailText.text!
         let cPassword = cPasswordField.text
         
-        PFUser.logInWithUsername(inBackground: email, password: password) { (user, error) in
-            if user != nil{
+        user.signUpInBackground{ success, error in
+            if password == cPassword{
                 self.performSegue(withIdentifier: "loginSegue" , sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")
