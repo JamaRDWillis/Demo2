@@ -25,18 +25,14 @@ class CreateViewController: UIViewController {
     @IBAction func createButton(_ sender: Any) {
         
         let user = PFUser()
-        
-        user.email = emailText.text
+        user.username = emailText.text
         user.password = passwordField.text
         
-         
-        let password = passwordField.text!
-        let email = emailText.text!
-        let cPassword = cPasswordField.text
         
-        user.signUpInBackground{ success, error in
-            if password == cPassword{
-                self.performSegue(withIdentifier: "loginSegue" , sender: nil)
+        user.signUpInBackground { (success, error) in
+            if success{
+                print(user,"save succesfully")
+                self.performSegue(withIdentifier: "createSegue" , sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")
                 

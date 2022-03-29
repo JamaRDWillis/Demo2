@@ -3,7 +3,7 @@
 //  SS
 //
 //  Created by user211074 on 2/20/22.
-//
+// Controller for login page
 
 import UIKit
 import Parse
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func onSign(_ sender: Any) {
         let user = PFUser()
         
-        user.email = emailField.text
+        user.username = emailField.text
         user.password = passwirdfield.text
          
         let password = passwirdfield.text!

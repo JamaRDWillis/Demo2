@@ -6,13 +6,11 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: ViewController {
 
-    @IBAction func logOut(_ sender: Any) {
-        
-        
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,5 +27,16 @@ class HomeViewController: ViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logOut(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name :"Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "loginViewController")
+        guard let windowsScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
+                delegate = windowsScene.delegate as? SceneDelegate else {return}
+        
+        delegate.window?.rootViewController = loginViewController
+ 
+    }
+    
 }

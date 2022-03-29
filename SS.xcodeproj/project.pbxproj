@@ -21,6 +21,7 @@
 		F0BDF8FD27C2E02D0092FEAA /* SSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF8FC27C2E02D0092FEAA /* SSTests.swift */; };
 		F0BDF90727C2E02E0092FEAA /* SSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF90627C2E02E0092FEAA /* SSUITests.swift */; };
 		F0BDF90927C2E02E0092FEAA /* SSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDF90827C2E02E0092FEAA /* SSUITestsLaunchTests.swift */; };
+		F0FBFB4727ED8FF00098715C /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBFB4627ED8FF00098715C /* QuestionnaireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F0BDF90227C2E02E0092FEAA /* SSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BDF90627C2E02E0092FEAA /* SSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSUITests.swift; sourceTree = "<group>"; };
 		F0BDF90827C2E02E0092FEAA /* SSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0FBFB4627ED8FF00098715C /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		F14DECE27918F5DD2FB6FE73 /* Pods-SSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSTests.release.xcconfig"; path = "Target Support Files/Pods-SSTests/Pods-SSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F868DBCCFEEFE8388C935643 /* Pods-SS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SS.release.xcconfig"; path = "Target Support Files/Pods-SS/Pods-SS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				F0BDF8E927C2E02C0092FEAA /* ViewController.swift */,
 				F09E93E427D8803600F09AE6 /* CreateViewController.swift */,
 				F042BEE027C4817600521944 /* HomeViewController.swift */,
+				F0FBFB4627ED8FF00098715C /* QuestionnaireViewController.swift */,
 			);
 			path = SS;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0FBFB4727ED8FF00098715C /* QuestionnaireViewController.swift in Sources */,
 				F09E93E527D8803600F09AE6 /* CreateViewController.swift in Sources */,
 				F0BDF8EA27C2E02C0092FEAA /* ViewController.swift in Sources */,
 				F0BDF8E627C2E02C0092FEAA /* AppDelegate.swift in Sources */,

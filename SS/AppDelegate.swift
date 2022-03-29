@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "4pHGEGbLdPnuEekbANGzx0VQMhKRlAt6Qdst4Lid" // <- UPDATE
+                    $0.clientKey = "TJmxVvqAPCGhSSMBueYBnZZ71m4HipOZ4LK6ZY07" // <- UPDATE
+                    $0.server = "https://parseapi.back4app.com"
+            }
+            Parse.initialize(with: parseConfig)
         return true
     }
 
