@@ -14,6 +14,8 @@ class QuestionnaireViewController: UIViewController {
     @IBOutlet weak var accountBalanceText: UITextField!
     @IBOutlet weak var incomeText: UITextField!
     @IBOutlet weak var expensesText: UITextField!
+    @IBOutlet weak var debtText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,11 +30,14 @@ class QuestionnaireViewController: UIViewController {
         user["accountBalance"] = accountBalanceText.text!
         user["income"] = incomeText.text!
         user["expenses"] = expensesText.text!
+        user["debtAmount"] = debtText.text!
         
         
         user.saveInBackground { (success , error) in
             if success{
                 print("Saved!")
+                self.performSegue(withIdentifier: "confirmSegue" , sender: nil)
+                
             }else{
                 print("error!")
             }

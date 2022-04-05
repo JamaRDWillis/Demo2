@@ -10,7 +10,12 @@ import Parse
 
 class HomeViewController: ViewController {
 
-
+    @IBOutlet weak var debtText: UILabel!
+    
+    let user = PFUser()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
