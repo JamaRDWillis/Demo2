@@ -7,22 +7,73 @@
 
 import UIKit
 import Parse
+import Charts
 
 class HomeViewController: ViewController {
 
-    @IBOutlet weak var debtText: UILabel!
+    
     
     let user = PFUser()
     
+    //user[""] = spendingText.text!
+    //user[""] = incomeText.text!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createChart()
 
         // Do any additional setup after loading the view.
     }
-    
+    private func createChart() {
+    // Create bar chart
+    let barChart = BarChartView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height:
+    view.frame.size.width))
+    // Configure axis
+    let xAxis = barChart.xAxis
+    let rightAxis = barChart.rightAxis
 
+    // Configure legend
+    let legend = barChart.legend
+    // Supply data
+    var entries = [BarChartDataEntry]()
+    var entries2 = [BarChartDataEntry]()
+    for x in 0..<2{
+    entries.append(BarChartDataEntry(
+
+    x: Double(x),
+    y: Double.random(in: 0...30)
+    )
+    )
+    entries2.append(BarChartDataEntry(
+
+    x: Double(x),
+    y: Double.random(in: 0...30)
+    )
+    )
+    }
+    let set = BarChartDataSet(entries: entries, label: "Monthly Income")
+    set.colors = [
+    NSUIColor(cgColor: UIColor.systemBlue.cgColor),
+    NSUIColor(cgColor: UIColor.systemBlue.cgColor),
+    NSUIColor(cgColor: UIColor.systemBlue.cgColor),
+    NSUIColor(cgColor: UIColor.systemBlue.cgColor),
+    ]
+    let set2 = BarChartDataSet(entries: entries2, label: "Monthly Spending")
+    set2.colors = [
+    NSUIColor(cgColor: UIColor.systemGray.cgColor),
+    NSUIColor(cgColor: UIColor.systemGray.cgColor),
+    NSUIColor(cgColor: UIColor.systemGray.cgColor),
+    NSUIColor(cgColor: UIColor.systemGray.cgColor),
+    ]
+    let data = BarChartData(dataSets: [set, set2])
+    barChart.data = data
+
+    view.addSubview(barChart)
+    barChart.center = view.center
+
+    }
     /*
     // MARK: - Navigation
 
